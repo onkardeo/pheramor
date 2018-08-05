@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page4"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:layout_width= "match_parent"
+        android:layout_height= "match_parent"
+        android:background="@drawable/gradbackground"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Gender"
+                android:textSize="15sp"
+                android:textColor="#fff"
+
+                />
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50sp"
+
+                android:layout_marginTop="5sp"
+                android:textColor="#000"
+                android:hint="Gender"
+                android:textColorHint="#000"
+                android:shadowColor="#000"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Date of Birth"
+                android:textSize="15sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:textColor="#fff"
+
+
+                />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="#000"
+                android:hint="MM"
+                android:textColorHint="#000"
+                android:shadowColor="#000"
+
+                />
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_marginHorizontal="10sp"
+                android:spinnerMode="dropdown"
+                android:textColor="#000"
+                android:hint="DD"
+                android:textColorHint="#000"
+                android:shadowColor="#000"
+                />
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:textColor="#000"
+                android:hint="YYYY"
+                android:textColorHint="#000"
+                android:shadowColor="#000"
+                />
+
+
+        </LinearLayout>>
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:text="next"
+                android:layout_marginTop="10dp"
+                android:onClick="OnClick"
+                android:background="@drawable/buttonstyleselector"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
